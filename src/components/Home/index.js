@@ -50,8 +50,8 @@ const Home = () => {
   }, [])
 
   const renderLoading = () => (
-    <div className='loader-container' data-testid='loader'>
-      <Loader type='ThreeDots' color='#263868' height={100} width={100} />
+    <div className="loader-container" data-testid="loader">
+      <Loader type="ThreeDots" color="#263868" height={100} width={100} />
     </div>
   )
   const onRetryBtn = () => {
@@ -59,15 +59,15 @@ const Home = () => {
   }
 
   const renderFailure = () => (
-    <div className='failure-container'>
+    <div className="failure-container">
       <img
-        src='https://res.cloudinary.com/dtc3rf1du/image/upload/v1718269991/nxtMart/eutnohgrrguctkbjqecr.png'
-        alt='failure view'
-        className='failure-img'
+        src="https://res.cloudinary.com/dtc3rf1du/image/upload/v1718269991/nxtMart/eutnohgrrguctkbjqecr.png"
+        alt="failure view"
+        className="failure-img"
       />
-      <h2 className='failure-head'>Oops! Something Went Wrong</h2>
-      <p className='failure-para'>We are having some trouble</p>
-      <button type='button' onClick={onRetryBtn} className='failure-btn'>
+      <h2 className="failure-head">Oops! Something Went Wrong</h2>
+      <p className="failure-para">We are having some trouble</p>
+      <button type="button" onClick={onRetryBtn} className="failure-btn">
         Retry
       </button>
     </div>
@@ -79,9 +79,9 @@ const Home = () => {
         onChangeCategoryId={onChangeCategoryId}
         categoryId={categoryId}
         productitems={productsData}
-        className='fixed-top'
+        className="fixed-top"
       />
-      <div className='items'>
+      <div className="items">
         <CategoryItems
           onChangeCategoryId={onChangeCategoryId}
           categoryId={categoryId}
@@ -107,7 +107,7 @@ const Home = () => {
   }
 
   return (
-    <div className='home-container1'>
+    <div className="home-container1">
       <Header />
       {renderSwitchOperation()}
     </div>
